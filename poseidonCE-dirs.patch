@@ -1,0 +1,19 @@
+--- poseidonCE-2.1.1/bin/poseidon.sh~	2003-11-12 12:46:46.000000000 +0100
++++ poseidonCE-2.1.1/bin/poseidon.sh	2003-11-24 14:27:56.000000000 +0100
+@@ -11,13 +11,13 @@
+ 
+ ulimit -s 2048
+ 
+-instdir=`dirname "$0"`
+ project=$1
+ loglevel=$2
+ 
+-cd "$instdir"
++POSEIDONCE_HOME=$HOME/.poseidon2/CE
++POSEIDONSE_HOME=$HOME/.poseidon2/SE
+ 
+-CLASSPATH=../lib/poseidon.jar:../lib/umlplugin.jar
++CLASSPATH=DATADIR/poseidonCE/lib/poseidon.jar:DATADIR/poseidonCE/lib/umlplugin.jar
+ CLASSPATH=$CLASSPATH:$JAVA_HOME/jre/lib/rt.jar      # for compilation
+ 
+ export CLASSPATH
