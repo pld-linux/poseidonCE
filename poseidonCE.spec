@@ -10,6 +10,7 @@ Source0:	http://download.gentleware.org/poseidonCE-2.1.1.zip
 # Source0-md5:	25aa5d4df234a054bdbcf98a118028bd
 Patch0:		%{name}-dirs.patch
 BuildRequires:	unzip
+Requires:	jre >= 1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
