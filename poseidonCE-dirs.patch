@@ -1,19 +1,24 @@
---- poseidonCE-2.1.1/bin/poseidon.sh~	2003-11-12 12:46:46.000000000 +0100
-+++ poseidonCE-2.1.1/bin/poseidon.sh	2003-11-24 14:27:56.000000000 +0100
-@@ -11,13 +11,13 @@
+--- poseidonCE-2.3.1/bin/poseidon.sh	2004-04-30 19:04:26.031878472 +0000
++++ poseidonCE-2.3.1/bin/poseidon.sh.orig	2004-04-30 19:05:54.633408992 +0000
+@@ -27,13 +27,18 @@
  
- ulimit -s 2048
- 
--instdir=`dirname "$0"`
+ cmd=`RealPath`
+ echo "Cmd: $cmd"
+-instdir=`dirname "$cmd"`
++#instdir=`dirname "$cmd"`
  project=$1
  loglevel=$2
  
 -cd "$instdir"
++#cd "$instdir"
++
 +POSEIDONCE_HOME=$HOME/.poseidon2/CE
 +POSEIDONSE_HOME=$HOME/.poseidon2/SE
++  
++#CLASSPATH=../lib/floating-server.jar:../lib/poseidon.jar:../lib/umlplugin.jar
++CLASSPATH=DATADIR/poseidonCE/lib/floating-server.jar:DATADIR/poseidonCE/lib/poseidon.jar:DATADIR/poseidonCE/lib/umlplugin.jar
  
--CLASSPATH=../lib/poseidon.jar:../lib/umlplugin.jar
-+CLASSPATH=DATADIR/poseidonCE/lib/poseidon.jar:DATADIR/poseidonCE/lib/umlplugin.jar
+-CLASSPATH=../lib/floating-server.jar:../lib/poseidon.jar:../lib/umlplugin.jar
  CLASSPATH=$CLASSPATH:$JAVA_HOME/jre/lib/rt.jar      # for compilation
  
  export CLASSPATH
