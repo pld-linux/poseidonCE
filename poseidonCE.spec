@@ -1,5 +1,5 @@
 Summary:	Poseidon Community Edition for UML
-Summary(pl):	Poseidon dla UMLa
+Summary(pl):	Poseidon dla UML-a w wersji Community Edition
 Name:		poseidonCE
 Version:	2.1.1
 Release:	1
@@ -36,6 +36,29 @@ clipboard (to copy diagrams to Word or Powerpoint for example), and
 the zoom is restricted. The other Editions meet the requirements of
 professional users.
 
+%description -l pl
+Wersja Community Edition jest w pe³ni u¿yteczna do modelowania UML i
+mo¿e byæ u¿ywana w dowolnych zastosowaniach, komercyjnych lub nie,
+przez dowolny okres i dowolnie du¿o. Zawiera wszystkie diagramy UML i
+wszystkie zaimplementowane elementy diagramów. Mo¿na tworzyæ,
+zapisywaæ i wczytywaæ obiekty, przegl±daæ istniej±ce modele, wymieniaæ
+modele, generowaæ kod w Javie, eksportowaæ diagramy do ró¿nych
+formatów i wiele wiêcej. Mo¿na j± za darmo rozpowszechniaæ, umieszczaæ
+na lokalnych lub internetowych serwerach, dystrybuowaæ na CD lub DVD.
+Gentleware nie udziela wsparcia dla wersji Community Edition.
+
+Ogólnie Community Edition dostarcza wszystko co potrzebne do nauki i
+u¿ywania UML-a w nieprofesjonalnym zakresie. Jednak ma kilka
+restrykcji. Niektóre mo¿liwo¶ci s± dostêpne tylko w wersjach
+komercyjnych, a nieobecne w darmowej Community Edition.
+
+Te mo¿liwo¶ci s± przydatne do zwiêkszenia produktywno¶ci, ale nie s±
+niezbêdne do tworzenia modeli UML. Z wa¿niejszych rzeczy, Community
+Edition nie wspiera reverse- ani round-trip engineeringu oraz nie
+mo¿e wczytywaæ wtyczek. Nie obs³uguje drukowania, kopiowania i
+wklejania do schowka Windows, a powiêkszanie jest ograniczone. Inne
+edycje mog± sprostaæ wymaganiom profesjonalnych u¿ytkowników.
+
 %prep
 %setup -q
 %patch0 -p1
@@ -45,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},{%{_datadir},%{_examplesdir}}/%{name}}
 
 sed -e 's#DATADIR#%{_datadir}#g' bin/poseidon.sh > $RPM_BUILD_ROOT%{_bindir}/poseidon
-cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}/
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 cp -a lib license-keys.txt $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 ln -sf %{_defaultdocdir}/%{name}-%{version} $RPM_BUILD_ROOT%{_datadir}/%{name}/docs
