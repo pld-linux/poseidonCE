@@ -5,9 +5,10 @@ Version:	2.3.1
 Release:	1
 License:	free/commercial (Gentleware AG)
 Group:		X11/Applications
-URL:		http://www.gentleware.com/products/descriptions/ce.php4
-Source0:	ftp://ftp.gentleware.org/%{name}-%{version}.zip
+#Source0Download: http://www.gentleware.com/products/download.php4
+Source0:	ftp://download.gentleware.biz/%{name}-%{version}.zip
 # Source0-md5:	2944feeb94b8452393993855753327ee
+URL:		http://www.gentleware.com/products/descriptions/ce.php4
 Patch0:		%{name}-dirs.patch
 BuildRequires:	unzip
 Requires:	jre >= 1.4
