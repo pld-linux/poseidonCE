@@ -1,13 +1,13 @@
 Summary:	Poseidon Community Edition for UML
 Summary(pl):	Poseidon dla UML-a w wersji Community Edition
 Name:		poseidonCE
-Version:	2.1.1
+Version:	2.3.1
 Release:	1
 License:	free/commercial (Gentleware AG)
 Group:		X11/Applications
 URL:		http://www.gentleware.com/products/descriptions/ce.php4
-Source0:	http://download.gentleware.org/poseidonCE-2.1.1.zip
-# Source0-md5:	25aa5d4df234a054bdbcf98a118028bd
+Source0:	ftp://ftp.gentleware.org/%{name}-%{version}.zip
+# Source0-md5:	2944feeb94b8452393993855753327ee
 Patch0:		%{name}-dirs.patch
 BuildRequires:	unzip
 Requires:	jre >= 1.4
