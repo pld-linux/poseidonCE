@@ -56,10 +56,10 @@ komercyjnych, a nieobecne w darmowej Community Edition.
 
 Te mo¿liwo¶ci s± przydatne do zwiêkszenia produktywno¶ci, ale nie s±
 niezbêdne do tworzenia modeli UML. Z wa¿niejszych rzeczy, Community
-Edition nie wspiera reverse- ani round-trip engineeringu oraz nie
-mo¿e wczytywaæ wtyczek. Nie obs³uguje drukowania, kopiowania i
-wklejania do schowka Windows, a powiêkszanie jest ograniczone. Inne
-edycje mog± sprostaæ wymaganiom profesjonalnych u¿ytkowników.
+Edition nie wspiera reverse- ani round-trip engineeringu oraz nie mo¿e
+wczytywaæ wtyczek. Nie obs³uguje drukowania, kopiowania i wklejania do
+schowka Windows, a powiêkszanie jest ograniczone. Inne edycje mog±
+sprostaæ wymaganiom profesjonalnych u¿ytkowników.
 
 %prep
 %setup -q
@@ -73,7 +73,7 @@ sed -e 's#DATADIR#%{_datadir}#g' bin/poseidon.sh > $RPM_BUILD_ROOT%{_bindir}/pos
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 cp -a lib license-keys.txt $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-ln -sf %{_defaultdocdir}/%{name}-%{version} $RPM_BUILD_ROOT%{_datadir}/%{name}/docs
+ln -sf %{_docdir}/%{name}-%{version} $RPM_BUILD_ROOT%{_datadir}/%{name}/docs
 
 %clean
 rm -rf $RPM_BUILD_ROOT
