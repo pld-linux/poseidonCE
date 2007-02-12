@@ -1,5 +1,5 @@
 Summary:	Poseidon Community Edition for UML
-Summary(pl):	Poseidon dla UML-a w wersji Community Edition
+Summary(pl.UTF-8):   Poseidon dla UML-a w wersji Community Edition
 Name:		poseidonCE
 Version:	2.3.1
 Release:	1
@@ -38,28 +38,28 @@ clipboard (to copy diagrams to Word or Powerpoint for example), and
 the zoom is restricted. The other Editions meet the requirements of
 professional users.
 
-%description -l pl
-Wersja Community Edition jest w pe³ni u¿yteczna do modelowania UML i
-mo¿e byæ u¿ywana w dowolnych zastosowaniach, komercyjnych lub nie,
-przez dowolny okres i dowolnie du¿o. Zawiera wszystkie diagramy UML i
-wszystkie zaimplementowane elementy diagramów. Mo¿na tworzyæ,
-zapisywaæ i wczytywaæ obiekty, przegl±daæ istniej±ce modele, wymieniaæ
-modele, generowaæ kod w Javie, eksportowaæ diagramy do ró¿nych
-formatów i wiele wiêcej. Mo¿na j± za darmo rozpowszechniaæ, umieszczaæ
-na lokalnych lub internetowych serwerach, dystrybuowaæ na CD lub DVD.
+%description -l pl.UTF-8
+Wersja Community Edition jest w peÅ‚ni uÅ¼yteczna do modelowania UML i
+moÅ¼e byÄ‡ uÅ¼ywana w dowolnych zastosowaniach, komercyjnych lub nie,
+przez dowolny okres i dowolnie duÅ¼o. Zawiera wszystkie diagramy UML i
+wszystkie zaimplementowane elementy diagramÃ³w. MoÅ¼na tworzyÄ‡,
+zapisywaÄ‡ i wczytywaÄ‡ obiekty, przeglÄ…daÄ‡ istniejÄ…ce modele, wymieniaÄ‡
+modele, generowaÄ‡ kod w Javie, eksportowaÄ‡ diagramy do rÃ³Å¼nych
+formatÃ³w i wiele wiÄ™cej. MoÅ¼na jÄ… za darmo rozpowszechniaÄ‡, umieszczaÄ‡
+na lokalnych lub internetowych serwerach, dystrybuowaÄ‡ na CD lub DVD.
 Gentleware nie udziela wsparcia dla wersji Community Edition.
 
-Ogólnie Community Edition dostarcza wszystko co potrzebne do nauki i
-u¿ywania UML-a w nieprofesjonalnym zakresie. Jednak ma kilka
-restrykcji. Niektóre mo¿liwo¶ci s± dostêpne tylko w wersjach
+OgÃ³lnie Community Edition dostarcza wszystko co potrzebne do nauki i
+uÅ¼ywania UML-a w nieprofesjonalnym zakresie. Jednak ma kilka
+restrykcji. NiektÃ³re moÅ¼liwoÅ›ci sÄ… dostÄ™pne tylko w wersjach
 komercyjnych, a nieobecne w darmowej Community Edition.
 
-Te mo¿liwo¶ci s± przydatne do zwiêkszenia produktywno¶ci, ale nie s±
-niezbêdne do tworzenia modeli UML. Z wa¿niejszych rzeczy, Community
-Edition nie wspiera reverse- ani round-trip engineeringu oraz nie mo¿e
-wczytywaæ wtyczek. Nie obs³uguje drukowania, kopiowania i wklejania do
-schowka Windows, a powiêkszanie jest ograniczone. Inne edycje mog±
-sprostaæ wymaganiom profesjonalnych u¿ytkowników.
+Te moÅ¼liwoÅ›ci sÄ… przydatne do zwiÄ™kszenia produktywnoÅ›ci, ale nie sÄ…
+niezbÄ™dne do tworzenia modeli UML. Z waÅ¼niejszych rzeczy, Community
+Edition nie wspiera reverse- ani round-trip engineeringu oraz nie moÅ¼e
+wczytywaÄ‡ wtyczek. Nie obsÅ‚uguje drukowania, kopiowania i wklejania do
+schowka Windows, a powiÄ™kszanie jest ograniczone. Inne edycje mogÄ…
+sprostaÄ‡ wymaganiom profesjonalnych uÅ¼ytkownikÃ³w.
 
 %prep
 %setup -q
