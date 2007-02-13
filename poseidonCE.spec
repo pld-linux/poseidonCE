@@ -1,5 +1,5 @@
 Summary:	Poseidon Community Edition for UML
-Summary(pl.UTF-8):   Poseidon dla UML-a w wersji Community Edition
+Summary(pl.UTF-8):	Poseidon dla UML-a w wersji Community Edition
 Name:		poseidonCE
 Version:	2.3.1
 Release:	1
