@@ -63,7 +63,7 @@ sprostać wymaganiom profesjonalnych użytkowników.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
